@@ -3,5 +3,5 @@ Router.configure({
 });
 
 Router.map(function(){
-	this.route('queueList', {path:'/'});
+	this.route('guests', {path:'/'});
 })
