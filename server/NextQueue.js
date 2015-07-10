@@ -7,11 +7,11 @@ if (Meteor.isServer) {
 	Meteor.methods({
 		//this will be set and called from the add window.
 		//Temporary add with button right now
-		'insert' : function(){
+		'newGuest' : function(name, phoneNumber, groupSize, notes){
 			Waiting.insert({
-				name: "",
-				guests: "",
-				notes: "" 
+				name: name,
+				notes: notes,
+				groupSize: groupSize
 			 });
 	}
 	});

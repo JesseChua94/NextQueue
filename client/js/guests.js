@@ -1,10 +1,9 @@
 if (Meteor.isClient) {
-	Meteor.subscribe("waiting"); 
-	Template.guests.helpers({
-	})
+	Meteor.subscribe("waiting");
 
-	Template.guests.events({
-		'keyup input[class=phone]' : function(event) {
-         }
-  	});
+	Template.guests.helpers({
+		'guestsWaiting' : function() {
+			return Waiting.find({});
+		}
+	});
 }

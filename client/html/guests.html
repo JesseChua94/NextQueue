@@ -10,74 +10,18 @@
             </tr>
         </thead>
         <tbody>
+
+          {{#each guestsWaiting}}
             <tr>
                 <td></td>
-                <td>Name</td>
-                <td>No. of Guests</td>
-                <td>Notes</td>
+                <td>{{name}}</td>
+                <td>{{groupSize}}</td>
+                <td>{{notes}}</td>
             </tr>
-            <tr>
-                <td></td>
-                <td>Name</td>
-                <td>No. of Guests</td>
-                <td>Notes</td>
-            </tr>
+          {{/each}}
         </tbody>
     </table>
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Add Guest</h4>
-      </div>
-      <div class="modal-body">
-
-        <input id="guestName" name="name" value="{{name}}" type="text" size=20 placeholder="Guest Name"> <br>
-
-        <div id="phoneNumber">
-        (<input class="phone" placeholder="416" type=tel maxlength="3" size=3>) <input class="phone" placeholder="123" type=tel maxlength="3" size=3> - <input class="phone" placeholder="4567" type=tel maxlength="4" size=4> <br>
-        <div id="numberOfGuests">
-            <form>
-                <div id="addOneToTwo">
-                    <input id="small" type="radio" name="size" value="{{small}}"> <br>
-                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>  &nbsp; &nbsp;-  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                </div>
-                <div id="addThreeToFive">
-                  <input id="medium" type="radio" name="size" value="{{medium}}"> <br>
-                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp; &nbsp; -  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                </div>
-                <div id="addSixPlus">
-                  <input id="large" type="radio" name="size" value="{{large}}"> <br>
-                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span> &nbsp;
-                  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                </div>
-            </form>
-
-            <textarea placeholder="Notes" type="text"> </textarea>
-        </div>
-      </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
-      </div>
-    </div>
-  </div>
-</div>
+{{> addGuestDialog}}
 
 </template>
