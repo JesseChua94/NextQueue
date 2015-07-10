@@ -175,14 +175,14 @@ div#page-content-wrapper div.container-fluid {
         height: 100%;
         text-align: center;
     }
-    div#addGuest {
+    button#addGuest {
         color: black;
         text-align: center;
         float:right;
-        padding-right: 0;
-    }
-    div#addGuest button {
-        width: 100%;
+        border: none;
+        padding: 0;
+        height: 79px;
+        outline: none;
     }
     div.sixPlus {
         margin-left: -40px;
