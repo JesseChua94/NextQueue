@@ -15,31 +15,27 @@
             <div id="phoneNumber">
               (<input id="one" placeholder="416" name="area" value="" type=tel maxlength="3" size=3>) <input name="firstHalf" value="" id="two" placeholder="123" type=tel maxlength="3" size=3> - <input name="secondHalf" value="" placeholder="4567" type=tel maxlength="4" size=4> <br>
             </div>
+<!--             pick number of guests-->          
             <div id="numberOfGuests">
-              <div id="addOneToTwo">
-                  <input id="small" type="radio" name="size" value="one"> <br>
-                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>  &nbsp; &nbsp;-  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-              </div>
-              <div id="addThreeToFive">
-                <input id="medium" type="radio" name="size" value="two"> <br>
-                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp; &nbsp; -  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-              </div>
-              <div id="addSixPlus">
-                <input id="large" type="radio" name="size" value="three"> <br>
-                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                <span class="glyphicon glyphicon-user" aria-hidden="true"></span> &nbsp;
-                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary active">
+                  <input type="radio" name="size" id="option1" checked value="1"> 1
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" name="size" id="option2" value="2"> 2
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" name="size" id="option2" value="3"> 3
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" name="size" id="option3" value="4"> 4
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" name="size" id="option3" value="5"> 5
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" name="size" id="option3" value="6+"> 6 +
+                </label>
               </div>
             </div>
               <textarea name="notes" value="" placeholder="Notes" type="text"> </textarea>
