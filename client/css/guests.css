@@ -11,3 +11,40 @@ table tbody tr td:first-child::before {
     min-width: 1em;
     margin-right: 0.5em;
 }
+.glyphicon-ok {
+	color: green;
+}
+.glyphicon-remove {
+	color: red;
+}
+#guestName {
+	font-size: 20px;
+}
+#phoneNumber {
+	margin-top: 20px;
+	font-size: 20px;
+}
+#numberOfGuests{
+	margin-top: 30px;
+}
+#addOneToTwo, #addThreeToFive, #addSixPlus {
+	display: inline-block;
+	color: black;
+	text-align: center;
+}
+#addThreeToFive, #addSixPlus {
+	margin-left: 50px;
+}
+input#small {
+	margin-left: 15px;
+}
+input#medium {
+	margin-left: 9px;
+}
+textarea {
+	margin-top: 20px;
+	resize: none;
+	font-size: 10px;
+	height: 100px;
+	width: 100%;
+}
