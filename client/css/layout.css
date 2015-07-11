@@ -5,23 +5,69 @@
  */
 
 /* Top Bar*/
+.container-fluid .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.row-wrapper {
+    padding: 0;
+}
 .sidetoggle {
     margin-top: 20px;
  }
 #wrapper.toggled div .topbar {
     background-color: #22313F;
-    width: 100%;
     height: 79px;
 }
 div.topbar {
     background-color: #22313F;
-    width: 100%;
     height:79px;
 }
 div#page-content-wrapper div.container-fluid {
     padding-right: 0;
 }
+@media(max-width:730px) {
 
+    div.waiting, div.served, div.average, div.oneToTwo, div.threeToFive,
+    div.sixPlus {
+        color: white;
+        height: 100%;
+        text-align: center;
+    }
+    .toggleButton {
+        float: left;
+    }
+    div.threeToFive {
+        margin-left: -20px;
+    }
+    button#addGuest {
+        color: black;
+        text-align: center;
+        float:right;
+        border: none;
+        padding: 0;
+        height: 79px;
+        outline: none;
+    }
+    div.sixPlus {
+        margin-left: 10px;
+    }
+    span.glyphicon-user {
+        width: 3px;
+        height: 3px;
+    }
+    div.average{
+        text-align: left;
+        margin-top: 11px;
+        margin-left: -10px;
+    }
+
+    h1#waitingCount, h1#servedCount {
+        margin-top: 10px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+}
 
 /* Toggle Styles */
 
@@ -53,11 +99,11 @@ div#page-content-wrapper div.container-fluid {
 }
 
 #wrapper.toggled #sidebar-wrapper {
-    width: 23.4%;
+    width: 150px;
 }
 
 #wrapper.toggled #sidebar-wrapper li .item {
-        margin-left: 20%;
+    margin-left: 20%;
     }
 
 #page-content-wrapper {
@@ -126,45 +172,41 @@ div#page-content-wrapper div.container-fluid {
     background: none;
 }
 
-
-
-@media(min-width:768px) {
+/* tablets (portrait and landscape) ----------- */
+@media(min-width : 768px) {
     #wrapper {
         padding-left: 150px;
     }
-
+    .toggleButton{
+        float: left;
+        padding: 0;
+    }
     #wrapper.toggled {
         padding-left: 0;
     }
-
     #sidebar-wrapper {
         width: 150px;
     }
     #sidebar-wrapper li .item {
         margin-left: 20%;
     }
-
     #wrapper.toggled #sidebar-wrapper {
         width: 0;
     }
-
     #page-content-wrapper {
         position: relative;
         height: 100%;
     }
-
     #wrapper.toggled #page-content-wrapper {
         position: relative;
         margin-right: 150px;
     }
     #wrapper.toggled div .topbar {
     background-color: #22313F;
-    width: 100%;
     height: 79px;
-}
+    }
     div .topbar {
         background-color: #22313F;
-        width: 100%;
         height:79px;
         padding-right: 0;
         overflow: hidden;
@@ -174,8 +216,10 @@ div#page-content-wrapper div.container-fluid {
         color: white;
         height: 100%;
         text-align: center;
+        padding: 0;
+        margin: 0;
     }
-    button#addGuest {
+    #addGuest {
         color: black;
         text-align: center;
         float:right;
@@ -184,8 +228,11 @@ div#page-content-wrapper div.container-fluid {
         height: 79px;
         outline: none;
     }
+    #addGuest button {
+        float:right;
+    }
     div.sixPlus {
-        margin-left: -40px;
+        margin-left: -20px;
     }
     span.glyphicon-user {
         width: 3px;
@@ -194,11 +241,13 @@ div#page-content-wrapper div.container-fluid {
     div.average{
         text-align: left;
         margin-top: 11px;
+        margin-left: 30px;
     }
 
     h1#waitingCount, h1#servedCount {
         margin-top: 10px;
         margin-bottom: 0;
         padding: 0;
+
     }
 }

@@ -21,52 +21,48 @@
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
-            <div class="container-fluid">
+            <div class="row-wrapper container-fluid">
             	
                 <div class="row">
 
                 	<div class="topbar col-xs-12">
-                        <div class="row">
-                            <div class="col-md-1">
+                            <div class="toggleButton">
                                     
                                 <a href="#menu-toggle" id="menu-toggle"><button class="sidetoggle btn btn-default">
                                    <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
                                 </button></a>
                             </div>
 
-                            <div class="waiting col-md-1">
+                            <div class="waiting col-xs-1">
                                 <h1 id="waitingCount">{{getWaitingCount}}</h1>
                                 Waiting
                             </div>
 
-                             <div class="served col-md-1">
+                             <div class="served col-xs-1 col-md-1">
                                 <h1 id="servedCount">{{getServedCount}}</h1>
                                 Served
                             </div>
-                             <div class="average col-md-1">
+                             <div class="average col-xs-1">
                                 Average <br>
                                 Wait <br>
                                 Time
                             </div>
-                            <div class="oneToTwo col-md-1">
-                                <h1 id="servedCount">{{getServedCount}}</h1>
-                                {{> small}}
+                            <div class="oneToTwo col-xs-2 col-md-1">
+                                <h1 id="servedCount">{{getServedCount}}</h1> {{> small}}
                             </div>
-                            <div class="threeToFive col-md-2">
-                                <h1 id="servedCount">{{getServedCount}}</h1>
-                                {{> medium}}
+                            <div class="threeToFive col-xs-2">
+                                <h1 id="servedCount">{{getServedCount}}</h1> {{> medium}}
                             </div>
-                            <div class="sixPlus col-md-2">
-                                <h1 id="servedCount">{{getServedCount}}</h1>
-                                {{> large}}
+                            <div class="sixPlus col-xs-2 col-md-2">
+                                <h1 id="servedCount">{{getServedCount}}</h1> {{> large}}
                             </div>
-                            <button id="addGuest" class="col-md-3 btn btn-default" data-toggle="modal" data-target="#myModal">
-                                <div>
-                                    <h1>Add Guest</h1>
-                                </div>
-                            </button>
-                        </div>
-
+                            <div id="addGuest" class="col-xs-1 col-sm-2 col-md-3">
+                                <button class=" btn btn-default" data-toggle="modal" data-target="#myModal">
+                                    <div>
+                                        <h1>Add Guest</h1>
+                                    </div>
+                                </button>
+                            </div>
 					</div>
 
 
